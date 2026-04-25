@@ -196,11 +196,20 @@
 </div>
 </div>
 
-    <script>
-        function pesan() {
-    alert("Pesanan masuk!");
+  <script>
+function pesan(jus, idNama, idJumlah) {
+    let nama = document.getElementById(idNama).value;
+    let jumlah = document.getElementById(idJumlah).value;
+
+    let pesanText = "Halo, saya mau pesan jus " + jus +
+                    "%0ANama: " + nama +
+                    "%0AJumlah: " + jumlah;
+
+    let url = "https://wa.me/6289682026605?text=" + pesanText;
+
+    window.open(url);
 }
-    </script>
+</script>
 
 </body>
 </html>
