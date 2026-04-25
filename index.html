@@ -5,25 +5,25 @@
 
     <style>
     body {
-        background-image: url("backgroundbuah.png");
-        background-size: cover;
-        background-position: center;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #a8e063, #56ab2f);
     }
 
-    img {
-        width: 200px;
-    }
-
-    h1, h2, h3, h4, h5, h6 {
+    h1 {
         text-align: center;
-        font-size: 30px;
-        color: green;
+        color: white;
+        padding: 20px;
     }
 
-    /* INI YANG PENTING BANGET */
     .container {
         display: flex;
-        gap: 40px;
+        gap: 30px;
+        background: white;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     }
 
     .kiri {
@@ -34,158 +34,167 @@
         width: 50%;
     }
 
+    img {
+        width: 100%;
+        max-width: 250px;
+        border-radius: 10px;
+    }
+
+    h2 {
+        color: #2e7d32;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    button {
+        background: #2e7d32;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #1b5e20;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
     </style>
 
 </head>
 <body>
 
+<h1>🍹 MENU JUS SEGAR 🍹</h1>
+
+<!-- PEPAYA -->
 <div class="container">
-
-    <!-- KIRI -->
-    <div class="kiri">
-        <h1>PEPAYA GANDUL</h1>
-        <p>GONDAL GANDUL WAJIB DI COBA</p>
-        <img src="pepaya gandul.jpg">
-
-        <label>Beli:</label>
-        <input type="text">
-
-        <label style="margin-left:10px;">Jumlah:</label>
-        <input type="number"><br><br>
-
-        <label>Pesan:</label><br>
-        <textarea rows="3" cols="20"></textarea><br><br>
-
-        <button>Pesan Sekarang</button>
-    </div>
-
-    <!-- KANAN -->
-    <div class="kanan">
-        <p><b>Manfaat Jus Pepaya:</b></p>
-        <p>• Melancarkan pencernaan</p>
-        <p>• Kaya vitamin</p>
-        <p>• Menyegarkan tubuh</p>
-    </div>
-
+<div class="kiri">
+<h2>PEPAYA</h2>
+<img src="pepaya gandul.jpg">
+<input type="text" placeholder="Nama">
+<input type="number" placeholder="Jumlah">
+<textarea placeholder="Pesan"></textarea>
+<button>Pesan</button>
 </div>
-
-    <h2>MANGGA </h2>
-    <p>BEST SELLER </p>
-    <p>MANGGA FRESH BARU DI PETIK</p>
-    <img src= "jus mangga.jpg">
-     <div>
-    <label>Beli:</label>
-    <input type="text">
-
-    <label style="margin-left:10px;">Jumlah:</label>
-    <input type="number">
-          <label>Pesan:</label><br>
-    <textarea rows="3" cols="20"></textarea><br><br>
-
-    <button>Pesan Sekarang</button>
-
-         <p><b>Manfaat Jus Mangga:</b></p>
-    <ul>
-        <li>Kaya vitamin A</li>
-        <li>Baik untuk mata</li>
-        <li>Menyegarkan tubuh</li>
-    </ul>
+<div class="kanan">
+<h3>Manfaat</h3>
+<ul>
+<li>Melancarkan pencernaan</li>
+<li>Kaya vitamin</li>
+<li>Menyegarkan tubuh</li>
+</ul>
 </div>
 </div>
 
-
-    <h3>NAGA FRESH </h3>
-   <img src = "jusnaga.jpg">
-     <div>
-    <label>Beli:</label>
-    <input type="text">
-
-    <label style="margin-left:10px;">Jumlah:</label>
-    <input type="number">
-          <label>Pesan:</label><br>
-    <textarea rows="3" cols="20"></textarea><br><br>
-
-    <button>Pesan Sekarang</button>
+<!-- MANGGA -->
+<div class="container">
+<div class="kiri">
+<h2>MANGGA</h2>
+<img src="jus mangga.jpg">
+<input type="text" placeholder="Nama">
+<input type="number" placeholder="Jumlah">
+<textarea placeholder="Pesan"></textarea>
+<button>Pesan</button>
+</div>
+<div class="kanan">
+<h3>Manfaat</h3>
+<ul>
+<li>Kaya vitamin A</li>
+<li>Baik untuk mata</li>
+<li>Menyegarkan tubuh</li>
+</ul>
+</div>
 </div>
 
-    <h4>JUS JAMBU </h4>
-   <P>JAMBU MERAH</P>
-    <img src= "jusjambu.jpg">
-
-     <div>
-    <label>Beli:</label>
-    <input type="text">
-
-    <label style="margin-left:10px;">Jumlah:</label>
-    <input type="number">
-          <label>Pesan:</label><br>
-    <textarea rows="3" cols="20"></textarea><br><br>
-
-    <button>Pesan Sekarang</button>
-
-         <p>Meningkatkan Daya Tahan Tubuh</p>
-         <p>Melancarkan Pencernaan</p>
-         <p>Kesehatan Kulit & Mata</p>
-         <p>Menyehatkan Jantung </p>
+<!-- NAGA -->
+<div class="container">
+<div class="kiri">
+<h2>NAGA</h2>
+<img src="jusnaga.jpg">
+<input type="text" placeholder="Nama">
+<input type="number" placeholder="Jumlah">
+<textarea placeholder="Pesan"></textarea>
+<button>Pesan</button>
+</div>
+<div class="kanan">
+<h3>Manfaat</h3>
+<ul>
+<li>Kaya antioksidan</li>
+<li>Baik untuk darah</li>
+<li>Menyegarkan tubuh</li>
+</ul>
+</div>
 </div>
 
-
-    <h5>JERUK PERAS</h5>
-
-    <img src="jusjeruk.webp">
-
-     <div>
-    <label>Beli:</label>
-    <input type="text">
-
-    <label style="margin-left:10px;">Jumlah:</label>
-    <input type="number">
-          <label>Pesan:</label><br>
-    <textarea rows="3" cols="20"></textarea><br><br>
-
-    <button>Pesan Sekarang</button>
-         <p>Menjaga Kesehatan Kulit</p>
-         <p>Meningkatkan Penyerapan Zat Besi</p>
-         <p>Melancarkan Pencernaan</p>
-         <p>Menjaga Kesehatan Kulit</p>
-
-         
+<!-- JAMBU -->
+<div class="container">
+<div class="kiri">
+<h2>JAMBU</h2>
+<img src="jusjambu.jpg">
+<input type="text" placeholder="Nama">
+<input type="number" placeholder="Jumlah">
+<textarea placeholder="Pesan"></textarea>
+<button>Pesan</button>
 </div>
-    
-    <p>PERAS SENDIRI JUGA BISA</p>
-     <div>
-    <label>Beli:</label>
-    <input type="text">
-
-    <label style="margin-left:10px;">Jumlah:</label>
-    <input type="number">
-          <label>Pesan:</label><br>
-    <textarea rows="3" cols="20"></textarea><br><br>
-
-    <button>Pesan Sekarang</button>
+<div class="kanan">
+<h3>Manfaat</h3>
+<ul>
+<li>Meningkatkan daya tahan tubuh</li>
+<li>Kaya vitamin C</li>
+<li>Menyehatkan kulit</li>
+</ul>
+</div>
 </div>
 
-    <h6>JUS ALPUKAT </h6>
-    <img src= "jusalpukat.webp">
-     <div>
-    <label>Beli:</label>
-    <input type="text">
-
-    <label style="margin-left:10px;">Jumlah:</label>
-    <input type="number">
-          <label>Pesan:</label><br>
-    <textarea rows="3" cols="20"></textarea><br><br>
-
-    <button>Pesan Sekarang</button>
-
-         <p>Menjaga kesehatan mata</p>
-         <p>Meningkatkan penyerapan nutrisi</p>
-         <p>Memberikan rasa kenyang lebih lama</p>
-
-         
+<!-- JERUK -->
+<div class="container">
+<div class="kiri">
+<h2>JERUK</h2>
+<img src="jusjeruk.webp">
+<input type="text" placeholder="Nama">
+<input type="number" placeholder="Jumlah">
+<textarea placeholder="Pesan"></textarea>
+<button>Pesan</button>
 </div>
-    
+<div class="kanan">
+<h3>Manfaat</h3>
+<ul>
+<li>Menjaga kesehatan kulit</li>
+<li>Meningkatkan imun</li>
+<li>Menyegarkan tubuh</li>
+</ul>
+</div>
+</div>
 
+<!-- ALPUKAT -->
+<div class="container">
+<div class="kiri">
+<h2>ALPUKAT</h2>
+<img src="jusalpukat.webp">
+<input type="text" placeholder="Nama">
+<input type="number" placeholder="Jumlah">
+<textarea placeholder="Pesan"></textarea>
+<button>Pesan</button>
+</div>
+<div class="kanan">
+<h3>Manfaat</h3>
+<ul>
+<li>Lemak sehat untuk tubuh</li>
+<li>Menjaga kesehatan jantung</li>
+<li>Mengenyangkan lebih lama</li>
+</ul>
+</div>
+</div>
 
 </body>
 </html>
