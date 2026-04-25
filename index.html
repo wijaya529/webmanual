@@ -26,11 +26,7 @@
         box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     }
 
-    .kiri {
-        width: 50%;
-    }
-
-    .kanan {
+    .kiri, .kanan {
         width: 50%;
     }
 
@@ -40,15 +36,10 @@
         border-radius: 10px;
     }
 
-    h2 {
-        color: #2e7d32;
-    }
-
     input, textarea {
         width: 100%;
         padding: 8px;
-        margin-top: 5px;
-        margin-bottom: 10px;
+        margin: 5px 0;
         border-radius: 5px;
         border: 1px solid #ccc;
     }
@@ -65,10 +56,6 @@
     button:hover {
         background: #1b5e20;
     }
-
-    ul {
-        padding-left: 20px;
-    }
     </style>
 
 </head>
@@ -81,10 +68,10 @@
 <div class="kiri">
 <h2>PEPAYA</h2>
 <img src="pepaya gandul.jpg">
-<input type="text" placeholder="Nama">
-<input type="number" placeholder="Jumlah">
+<input id="nama1" type="text" placeholder="Nama">
+<input id="jumlah1" type="number" placeholder="Jumlah">
 <textarea placeholder="Pesan"></textarea>
-<button>Pesan</button>
+<button onclick="pesan('Pepaya','nama1','jumlah1')">Pesan</button>
 </div>
 <div class="kanan">
 <h3>Manfaat</h3>
@@ -101,10 +88,10 @@
 <div class="kiri">
 <h2>MANGGA</h2>
 <img src="jus mangga.jpg">
-<input type="text" placeholder="Nama">
-<input type="number" placeholder="Jumlah">
+<input id="nama2" type="text" placeholder="Nama">
+<input id="jumlah2" type="number" placeholder="Jumlah">
 <textarea placeholder="Pesan"></textarea>
-<button>Pesan</button>
+<button onclick="pesan('Mangga','nama2','jumlah2')">Pesan</button>
 </div>
 <div class="kanan">
 <h3>Manfaat</h3>
@@ -121,10 +108,10 @@
 <div class="kiri">
 <h2>NAGA</h2>
 <img src="jusnaga.jpg">
-<input type="text" placeholder="Nama">
-<input type="number" placeholder="Jumlah">
+<input id="nama3" type="text" placeholder="Nama">
+<input id="jumlah3" type="number" placeholder="Jumlah">
 <textarea placeholder="Pesan"></textarea>
-<button>Pesan</button>
+<button onclick="pesan('Naga','nama3','jumlah3')">Pesan</button>
 </div>
 <div class="kanan">
 <h3>Manfaat</h3>
@@ -141,10 +128,10 @@
 <div class="kiri">
 <h2>JAMBU</h2>
 <img src="jusjambu.jpg">
-<input type="text" placeholder="Nama">
-<input type="number" placeholder="Jumlah">
+<input id="nama4" type="text" placeholder="Nama">
+<input id="jumlah4" type="number" placeholder="Jumlah">
 <textarea placeholder="Pesan"></textarea>
-<button>Pesan</button>
+<button onclick="pesan('Jambu','nama4','jumlah4')">Pesan</button>
 </div>
 <div class="kanan">
 <h3>Manfaat</h3>
@@ -161,10 +148,10 @@
 <div class="kiri">
 <h2>JERUK</h2>
 <img src="jusjeruk.webp">
-<input type="text" placeholder="Nama">
-<input type="number" placeholder="Jumlah">
+<input id="nama5" type="text" placeholder="Nama">
+<input id="jumlah5" type="number" placeholder="Jumlah">
 <textarea placeholder="Pesan"></textarea>
-<button>Pesan</button>
+<button onclick="pesan('Jeruk','nama5','jumlah5')">Pesan</button>
 </div>
 <div class="kanan">
 <h3>Manfaat</h3>
@@ -181,10 +168,10 @@
 <div class="kiri">
 <h2>ALPUKAT</h2>
 <img src="jusalpukat.webp">
-<input type="text" placeholder="Nama">
-<input type="number" placeholder="Jumlah">
+<input id="nama6" type="text" placeholder="Nama">
+<input id="jumlah6" type="number" placeholder="Jumlah">
 <textarea placeholder="Pesan"></textarea>
-<button>Pesan</button>
+<button onclick="pesan('Alpukat','nama6','jumlah6')">Pesan</button>
 </div>
 <div class="kanan">
 <h3>Manfaat</h3>
@@ -196,10 +183,15 @@
 </div>
 </div>
 
-  <script>
+<script>
 function pesan(jus, idNama, idJumlah) {
     let nama = document.getElementById(idNama).value;
     let jumlah = document.getElementById(idJumlah).value;
+
+    if(nama === "" || jumlah === "") {
+        alert("Isi nama dan jumlah dulu bro!");
+        return;
+    }
 
     let pesanText = "Halo, saya mau pesan jus " + jus +
                     "%0ANama: " + nama +
