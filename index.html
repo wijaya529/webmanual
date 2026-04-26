@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>JUS SEGAR</title>
+<title>JUS SEGAR PREMIUM</title>
 
 <style>
 body {
@@ -10,7 +10,6 @@ body {
     background: linear-gradient(135deg, #43cea2, #185a9d);
 }
 
-/* HEADER */
 h1 {
     text-align: center;
     color: white;
@@ -35,29 +34,24 @@ h1 {
     transform: scale(1.02);
 }
 
-/* KIRI & KANAN */
 .kiri, .kanan {
     width: 50%;
 }
 
-/* GAMBAR */
 img {
     width: 100%;
     border-radius: 15px;
     margin-bottom: 10px;
 }
 
-/* INPUT */
 input, textarea {
     width: 100%;
     padding: 10px;
     margin: 6px 0;
     border-radius: 8px;
     border: 1px solid #ccc;
-    font-size: 14px;
 }
 
-/* BUTTON */
 button {
     width: 100%;
     background: linear-gradient(45deg, #00c853, #64dd17);
@@ -66,28 +60,19 @@ button {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 16px;
     font-weight: bold;
-    transition: 0.3s;
 }
 
 button:hover {
-    background: linear-gradient(45deg, #00e676, #76ff03);
     transform: scale(1.05);
 }
 
-/* TITLE */
 h2 {
     color: #2e7d32;
 }
 
-/* LIST */
 ul {
     padding-left: 20px;
-}
-
-li {
-    margin-bottom: 8px;
 }
 </style>
 
@@ -96,27 +81,136 @@ li {
 
 <h1>🍹 MENU JUS SEGAR PREMIUM 🍹</h1>
 
-<!-- TEMPLATE CARD -->
+<!-- PEPAYA -->
+<div class="container">
+<div class="kiri">
+<h2>PEPAYA</h2>
+<img src="pepaya gandul.jpg">
+<input id="nama1" type="text" placeholder="Nama">
+<input id="jumlah1" type="number" placeholder="Jumlah">
+<textarea placeholder="Pesan"></textarea>
+<button onclick="pesan('Pepaya','nama1','jumlah1')">Pesan</button>
+</div>
+<div class="kanan">
+<h3>Manfaat</h3>
+<ul>
+<li>Melancarkan pencernaan</li>
+<li>Kaya vitamin</li>
+<li>Menyegarkan tubuh</li>
+</ul>
+</div>
+</div>
+
+<!-- MANGGA -->
+<div class="container">
+<div class="kiri">
+<h2>MANGGA</h2>
+<img src="jus mangga.jpg">
+<input id="nama2" type="text" placeholder="Nama">
+<input id="jumlah2" type="number" placeholder="Jumlah">
+<textarea placeholder="Pesan"></textarea>
+<button onclick="pesan('Mangga','nama2','jumlah2')">Pesan</button>
+</div>
+<div class="kanan">
+<ul>
+<li>Kaya vitamin A</li>
+<li>Baik untuk mata</li>
+<li>Menyegarkan tubuh</li>
+</ul>
+</div>
+</div>
+
+<!-- NAGA -->
+<div class="container">
+<div class="kiri">
+<h2>NAGA</h2>
+<img src="jusnaga.jpg">
+<input id="nama3" type="text" placeholder="Nama">
+<input id="jumlah3" type="number" placeholder="Jumlah">
+<textarea placeholder="Pesan"></textarea>
+<button onclick="pesan('Naga','nama3','jumlah3')">Pesan</button>
+</div>
+<div class="kanan">
+<ul>
+<li>Kaya antioksidan</li>
+<li>Baik untuk darah</li>
+<li>Menyegarkan tubuh</li>
+</ul>
+</div>
+</div>
+
+<!-- JAMBU -->
+<div class="container">
+<div class="kiri">
+<h2>JAMBU</h2>
+<img src="jusjambu.jpg">
+<input id="nama4" type="text" placeholder="Nama">
+<input id="jumlah4" type="number" placeholder="Jumlah">
+<textarea placeholder="Pesan"></textarea>
+<button onclick="pesan('Jambu','nama4','jumlah4')">Pesan</button>
+</div>
+<div class="kanan">
+<ul>
+<li>Meningkatkan daya tahan tubuh</li>
+<li>Kaya vitamin C</li>
+<li>Menyehatkan kulit</li>
+</ul>
+</div>
+</div>
+
+<!-- JERUK -->
+<div class="container">
+<div class="kiri">
+<h2>JERUK</h2>
+<img src="jusjeruk.webp">
+<input id="nama5" type="text" placeholder="Nama">
+<input id="jumlah5" type="number" placeholder="Jumlah">
+<textarea placeholder="Pesan"></textarea>
+<button onclick="pesan('Jeruk','nama5','jumlah5')">Pesan</button>
+</div>
+<div class="kanan">
+<ul>
+<li>Menjaga kesehatan kulit</li>
+<li>Meningkatkan imun</li>
+<li>Menyegarkan tubuh</li>
+</ul>
+</div>
+</div>
+
+<!-- ALPUKAT -->
+<div class="container">
+<div class="kiri">
+<h2>ALPUKAT</h2>
+<img src="jusalpukat.webp">
+<input id="nama6" type="text" placeholder="Nama">
+<input id="jumlah6" type="number" placeholder="Jumlah">
+<textarea placeholder="Pesan"></textarea>
+<button onclick="pesan('Alpukat','nama6','jumlah6')">Pesan</button>
+</div>
+<div class="kanan">
+<ul>
+<li>Lemak sehat</li>
+<li>Menjaga jantung</li>
+<li>Mengenyangkan</li>
+</ul>
+</div>
+</div>
+
+<!-- STROBERI -->
 <div class="container">
 <div class="kiri">
 <h2>STROBERI</h2>
 <img src="stroberijus.jpg">
-
-<input id="nama7" type="text" placeholder="Nama kamu">
-<input id="jumlah7" type="number" placeholder="Jumlah pesanan">
-<textarea placeholder="Catatan tambahan..."></textarea>
-
-<button onclick="pesan('Stroberi','nama7','jumlah7')">
-Pesan Sekarang
-</button>
+<input id="nama7" type="text" placeholder="Nama">
+<input id="jumlah7" type="number" placeholder="Jumlah">
+<textarea placeholder="Pesan"></textarea>
+<button onclick="pesan('Stroberi','nama7','jumlah7')">Pesan</button>
 </div>
-
 <div class="kanan">
-<h3>Manfaat</h3>
 <ul>
-<li>Meningkatkan Imunitas</li>
+<li>Meningkatkan imun</li>
 <li>Baik untuk otak</li>
-<li>Menjaga kesehatan kulit</li>
+<li>Menjaga kulit</li>
 </ul>
 </div>
 </div>
@@ -127,7 +221,7 @@ function pesan(jus, idNama, idJumlah) {
     let jumlah = document.getElementById(idJumlah).value;
 
     if(nama === "" || jumlah === "") {
-        alert("Isi nama & jumlah dulu bro!");
+        alert("Isi nama & jumlah dulu!");
         return;
     }
 
